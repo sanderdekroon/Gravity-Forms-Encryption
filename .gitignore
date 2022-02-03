@@ -1,0 +1,6 @@
+.vscode
+*.code-workspace
+.phplint-cache
+.phpunit.result.cache
+/dist
+/vendor

@@ -1,0 +1,59 @@
+{
+    "name": "sanderdekroon/gravity-forms-encryption",
+    "type": "library",
+    "description": "Encrypt the fields of Gravity Forms entries.",
+    "keywords": [
+        "gravity forms",
+        "encryption",
+        "libsodium",
+        "sanderdekroon"
+    ],
+    "homepage": "https://github.com/sanderdekroon/gravity-forms-encryption",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sander de Kroon",
+            "email": "sander@dekroon.xyz",
+            "homepage": "https://github.com/sanderdekroon",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sanderdekroon\\GFEncryption\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sanderdekroon\\GFEncryption\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "psalm": "psalm",
+        "phplint": "phplint . -w --exclude=vendor",
+        "phpcompatibility": "./vendor/bin/phpcs -p ./src/ --standard=PHPCompatibility --runtime-set testVersion 7.3-",
+        "check-style": "phpcs -p --standard=PSR12 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR12 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "10up/wp_mock": "^0.4.2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+        "humanmade/psalm-plugin-wordpress": "^2.0",
+        "overtrue/phplint": "^2.3",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "squizlabs/php_codesniffer": "^3.6",
+        "vimeo/psalm": "^4.7"
+    }
+}
