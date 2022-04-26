@@ -1,6 +1,6 @@
 # Gravity Forms Encryption
 
-Encrypt fields of Gravity Forms entries. It uses LibSodium as it's encryption library.
+Encrypt fields of Gravity Forms entries. It uses LibSodium as its encryption library.
 
 ## Overview
 
