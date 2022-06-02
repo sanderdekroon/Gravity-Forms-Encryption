@@ -1,0 +1,17 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release
+        uses: fnkr/github-action-ghr@v1
+        env:
+          GHR_COMPRESS: zip
+          GHR_PATH: dist/
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
