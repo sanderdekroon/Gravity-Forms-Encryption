@@ -4,7 +4,7 @@ Tags: gravity forms, encryption, libosdium
 Requires at least: 5.1
 Tested up to: 5.9
 Requires PHP: 7.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
  
 Encrypt all fields of the Gravity Forms entries.
 
@@ -25,6 +25,9 @@ Download this plugin through Github and upload it to the webserver.
 
 == Changelog ==
 
-= 1.0.0 ??-??-2022 =
+= 1.0.1 - 02-06-2022 =
+* Update - PHP Version contraints
+
+= 1.0.0 - 03-02-2022 =
 
 * Add - Initial release

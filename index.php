@@ -4,7 +4,7 @@
  * Plugin Name: Gravity Forms Encryption
  * Plugin URI: https://github.com/sanderdekroon/gravity-forms-encryption
  * Description: Encrypt all fields of the Gravity Forms entries
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: sanderdekroon
  * Author URI: https://sanderdekroon.xyz
  * Requires at least: 5.1
